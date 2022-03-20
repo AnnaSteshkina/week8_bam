@@ -1,0 +1,217 @@
+@font-face {
+    font-family: "Intro";
+    src: url(../styles/assets/fonts/intro-regular.woff);
+}
+
+@font-face {
+    font-family: "Intro-Bold";
+    src: url(../styles/assets/fonts/Intro_Bold.woff);
+}
+
+body{
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 15vh auto 25vh;
+}
+
+.header{
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: end;
+    align-items: center;
+}
+
+.header__logo{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__logo__link-logo{
+    padding-left: 1vw;
+
+    font-family: "Intro-Bold", Arial, Helvetica, sans-serif;
+    font-style: bold;
+    font-weight: 800;
+    font-size: 1.5em;
+
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header__button-cart{
+    width: 115px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background: #5222D0;
+    border-radius: 100px;
+}
+
+.header__button-cart__link{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.8vw;
+    align-items: flex-end;
+
+    font-family: "Intro-Bold";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.main{
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__title{
+    width: 80vw;
+
+    font-family: "Intro-Bold", Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    line-height: 120%;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.main_container{
+    width: 80vw;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 30px;
+    justify-content: center;
+}
+
+.main__container__article__title{
+    font-family: "Intro-Bold", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 120%;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.main__container__article__text{
+    font-family: 'Roboto Slab', 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 160%;
+
+    color: #000000;
+}
+
+.main__container__form{
+    height: 233px;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    background-color: #EC615B;
+}
+
+.main__container__form__title{
+    margin-bottom: 0;
+    margin-top: 0;
+
+    font-family: "Intro-Bold", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 120%;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.main__container__form_input{
+    width: 100%;
+    height: 50px;
+    align-self: center;
+
+    outline: none;
+    border: #EC615B;
+}
+
+.main__container__form_input::placeholder{
+    font-family: 'Roboto Slab', 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+
+    color: #000000;
+    }
+
+.main__container__form_button{
+    width: 135px;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Intro-Bold", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8em;
+    line-height: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #FFFFFF;
+    background: #5222D0;
+    border-radius: 100px;
+}
+
+.footer{
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.footer__nav{
+    width: 80vw;
+}
+
+.footer__nav__list{
+    padding-left: 0;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    text-decoration: none;
+}
+
+.footer__nav__list__text{
+    font-family: 'Roboto Slab', 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5em;
+    line-height: 160%;
+
+    color: #5222D0;;
+    list-style: none;
+}
